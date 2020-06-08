@@ -1,0 +1,26 @@
+.ot{
+    transform: translate(255%,-250%);
+    border: 3px solid gold;
+  border-radius: 5px;
+  
+  }
+    
+  .oo{
+    margin-top: 30px;
+  margin-left: 100px;
+  font-family:'Courier New', Courier, monospace;
+  color: white;
+  size: 15px;
+  
+  background-repeat: no-repeat;
+  background-size: 320px;
+  border: 3px solid gold;
+  border-radius: 25px;
+  border-left: navy;
+  border-right: navy;
+  transform: translate(78%,-900%);
+  
+  }
+  .oo:hover{
+    color: rgba(0, 0, 0, 0.7);
+  }

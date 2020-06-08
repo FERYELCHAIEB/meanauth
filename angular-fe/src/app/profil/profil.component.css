@@ -1,0 +1,345 @@
+.bo{ transform: translate(25%,-700%);
+    border:2px solid gold;
+
+}
+.bon{
+    color: white;
+}
+
+
+.IM1{
+    transform: translate(130%,0%);
+}
+.kor{
+    transform: translate(0%,-80%);
+   
+}
+.ko{
+    margin-left: 350px;
+}
+strong{
+    font-family: 'Courier New', Courier, monospace;
+}
+.IM2{
+    transform: translate(132%,0%);
+}
+.kori{
+    transform: translate(0%,-55%);
+   
+}
+.IM3{
+    transform: translate(132%,-5%);}
+
+    .korii{
+        transform: translate(0%,-50%);
+       
+    }
+    .IM4{
+        transform: translate(132%,0%);
+    }
+    .kory{
+        transform: translate(0%,-50%);
+    }
+    .IM5{
+        transform: translate(130%,0%);}
+        .koryy{
+            transform: translate(0%,-50%);
+        }
+        .IM6{
+            transform: translate(130%,0%);}*
+            .kort{
+                transform: translate(0%,-50%);
+            }
+
+
+#img1{
+    left:80px;
+    height: 50px;
+    top: 5px;
+}
+
+#searcharea{
+    top: 17px;
+    left: 220px;
+    height:30px ;  
+}
+
+#searchbox{
+    width: 400px;
+    height: 26px;
+    background: white;
+    padding: 5px;
+    outline: none;
+    border-radius: 10px/10px;
+  
+    background-position: 405px;
+    background-repeat: no-repeat;
+}
+#profilearea{
+    top: 15px;
+    left: 795px;
+    height: 40px;
+
+}
+
+
+#profilearea4{
+    top: 20px;
+    left: 740px;
+    height: 30px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+
+#profilearea5{
+    top: 20px;
+    left: 770px;
+    height: 20px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+#profilearea6{
+    top: 20px;
+    left: 800px;
+    height: 20px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+
+#profilearea7{
+    top: 20px;
+    left: 830px;
+    height: 20px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+
+
+#profilearea8{
+    top: 20px;
+    left: 850px;
+    height: 20px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+
+
+
+#profilearea9{
+    top: 20px;
+    left: 880px;
+    height: 20px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+
+
+#profilearea10{
+    top: 20px;
+    left: 910px;
+    height: 20px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+
+
+
+#profilearea11{
+    top: 20px;
+    left: 940px;
+    height: 20px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+
+
+#profilearea12{
+    top: 20px;
+    left: 970px;
+    height: 20px;
+    font-size: 20px;
+    font-family: fantasy;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#findf{
+    top: 15px;
+    left: 1000px;
+    height: 30px;
+}
+
+
+.bodyn{
+    top: 170px;
+    left: 20px;
+    position: absolute;
+    width: 200px;
+    height: 740px;
+    font-family: 'Courier New', Courier, monospace;
+  
+  
+
+}
+
+
+
+#side2{
+    top: 60px;
+    left: 10px;
+    width: 160px;
+    height: 25px;
+    font-size: 15px;
+    color: white;
+    padding-top: 5px;
+    padding-left: 20px;
+   
+}
+
+
+
+
+#side4{
+    top: 90px;
+    
+    left: 10px;
+    width: 160px;
+    height: 25px;
+    font-size: 15px;
+    color: white;
+    padding-top: 5px;
+    padding-left: 20px;
+    
+}
+#side5{
+    top: 120px;
+    
+    left: 10px;
+    width: 160px;
+    height: 25px;
+    font-size: 15px;
+    color: white;
+    padding-top: 5px;
+    padding-left: 20px;
+    
+}
+
+#side2:hover{background: gold}
+
+#side4:hover{background:gold}
+#side5:hover{background:gold}
+
+
+
+.post01{top:20px;
+    left: 240px;
+    position: absolute;
+    background: white;
+    width: 475px;
+    height: 300px;
+    
+    border-radius: 3px/3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 2px solid gold;
+
+
+}
+
+.post03{top: 20px;
+    left: 725px;
+    position: absolute;
+    background: white;
+    width: 475px;
+    height: 300px;
+   
+    border-radius: 3px/3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 2px solid gold;
+
+
+}
+.post04{top: 330px;
+    left: 240px;
+    position: absolute;
+    background: white;
+    width: 475px;
+    height: 300px;
+   
+    border-radius: 3px/3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 2px solid gold;
+
+
+}
+.post05{top: 330px;
+    left: 725px;
+    position: absolute;
+    background: white;
+    width: 475px;
+    height: 300px;
+
+    border-radius: 3px/3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 2px solid gold;
+   
+
+
+}
+.post06{top:640px;
+    left: 240px;
+    position: absolute;
+    background: white;
+    width: 475px;
+    height: 300px;
+    
+    border-radius: 3px/3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 2px solid gold;
+
+
+}
+.post07{top: 640px;
+    left: 725px;
+    position: absolute;
+    background: white;
+    width: 475px;
+    height: 300px;
+   
+    border-radius: 3px/3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    border: 2px solid gold;
+
+
+}

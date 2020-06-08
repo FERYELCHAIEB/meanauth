@@ -1,0 +1,61 @@
+<body>
+        <img src="assets/images/pae.jpg" width="1240px" height="600px">
+      
+          <div class="container">
+              <h1> Reservation</h1>
+              <form [formGroup]="resForm">
+                  <div class="form-row"> 
+                    <div class="form-group col-md-12">
+                     
+                      <input type="text" class="form-control" id="name" formControlName="usern" placeholder="Nom&Prénom">
+                      <div *ngIf="nomUser.touched && nomUser.invalid">
+                              <small *ngIf="nomUser.errors.required" class="text-danger"><strong class="font">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></small>
+                              <small *ngIf="nomUser.errors.pattern" class="text-danger"><strong class="font">champ invalide<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></small>
+                                 </div>
+                    </div>
+                  </div>
+                  <div class="form-row">
+                      <div class="form-group col-md-12">
+                      
+                        <input type="email" class="form-control" id="email" formControlName="mail" placeholder="Email">
+                        <div *ngIf="email.touched && email.invalid">
+                          <small *ngIf="email.errors.required" class="text-danger"><strong class="font">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></small>
+                          <small *ngIf="email.errors.email" class="text-danger"><strong class="font">champ invalide<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></small>
+                             </div>
+                      </div>
+                    </div>
+                    <p><strong>veuillez choisir la durée de reservation</strong></p>
+                    <div class="form-row">
+                    <div class="col col-md-6">
+                      <label >Date Début</label>
+                      <input type="date" class="form-control select-date">
+                    </div>
+                    <div class="col col-md-6">
+                        <label >Date Fin</label>
+                        <input type="date" class="form-control select-date">
+                      </div>
+                      
+                    </div><br>
+                    <p><strong>Concernant le déplacement avez-vous moyen de transport ?</strong> </p> 
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
+                        <label class="form-check-label" for="exampleRadios1">
+                          Oui
+                        </label>
+                      </div>
+                      
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                          Non malheureusement
+                        </label>
+                       
+                      </div>
+                      <br>
+                      <div class="bout">
+                          <button type="submit" class="btn btn-outline-light" [routerLink]="['/profil']">Confirmer</button>
+                          <button type="submit" class="btn btn-outline-light mx-2 my-2 my-sm-0" [routerLink]="['/profil']">Annuler</button>
+                      </div>
+              </form>
+          </div>
+          </body>

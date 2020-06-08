@@ -1,0 +1,88 @@
+<body>
+
+    <div class="container-fluid">
+      <div class="row">
+            <div class="sidebar">
+                    <a class="active" href="#"><i class="fa fa-home" aria-hidden="true"></i>  Dashboard</a>
+                    <a ><i class="fa fa-user" aria-hidden="true"></i>  Valider compte</a>
+                    <a ><i class="fa fa-user" aria-hidden="true"></i>  Valider annonce</a>
+                    <a ><i class="fa fa-commenting-o" aria-hidden="true"></i>  Contact</a>
+                   
+                    <a ><i  class="fa fa-calendar-check-o"aria-hidden="true"></i> Verifier Reservation</a>
+                    <a ><i class="fa fa-credit-card-alt" aria-hidden="true"></i>  annonceRES</a>
+                    <a ><i class="fa fa-cog" aria-hidden="true"></i>  Paramétres</a>
+                  </div>
+    
+        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+            
+            <div class="btn-toolbar mb-2 mb-md-0">
+                    <form class="d-none d-sm-inline-block form-inline mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
+                            <div class="input-group">
+                              <input type="text" class="form-control bg-light border-2 small" placeholder="recherche" aria-label="Search" aria-describedby="basic-addon2">
+                              <div class="input-group-append">
+                                <button class="btn btn-dark" type="button">
+                                        <i class="fa fa-search"></i>
+                                </button>
+                              </div>
+                              <ul class="navbar-nav px-3">
+                                    <li class="nav-item text-nowrap pos">
+                                          Déconnexion  <i class="fa fa-power-off" aria-hidden="true"[routerLink]="['/connexion']"></i>
+                                    </li>
+                                  </ul>
+                              
+                            </div>
+                            
+                          </form>
+
+
+                          
+<div class="container my-5">
+
+    
+  <div class="row">
+      <div class="col">
+          <h1 class="font">listes des annonces</h1>
+          <div *ngIf="annonces.length == 0" class="alert alert-warning">Aucune annonce trouvée</div>
+          <table *ngIf="annonces.length > 0" class="table">
+           
+              <thead>
+                  <tr>
+                      <th>#</th>
+                      <th>Gouvernorat</th>
+                      <th>codePostal</th>
+                      <th>TEL</th>
+                      <th>TITRE</th>
+                      <th>Description</th>
+                      <th>#</th>
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let annonce of annonces ; let i = index">
+                      <th>{{ i }}</th>
+                      <td>{{ annonce.gouv }}</td>
+                      <td>{{ annonce.code }}</td>
+                      <td>{{ annonce.tel }}</td>
+                      <td>{{ annonce.titre }}</td>
+                      <td>{{ annonce.texte }}</td>
+                      <td>
+                          <button class="btn btn-dark" >Valider</button><br><br>
+                          <button class="btn btn-outline-dark  " >Annuler</button>
+                      </td>
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
+
+            </div>
+          </div>
+    
+          
+    
+         
+        </main>
+      </div>
+    </div>
+    </body>

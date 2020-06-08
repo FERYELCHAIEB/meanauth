@@ -1,0 +1,64 @@
+.forme{
+    font-family: cursive;
+    color: black;
+    font-size: 15px;
+   
+
+   
+}
+.ww{
+    margin-left: 117px;
+}
+.wwx{
+    margin-left: 15px;
+}
+
+
+
+.forme input{
+   
+    display: inline-block;
+    margin-bottom: 10px;
+
+}
+.inb{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 3px;
+   
+
+}
+
+.inb:focus{
+    background-color: lightgrey;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.container{
+    width: 600px;
+    position: absolute;
+  
+    transform: translate(50%,-125%);
+ 
+    border-radius: 30px;
+    border-style: solid;
+    border-color:black;
+   background-color: rgba(0, 0, 0, 0.2);
+   padding-right:30px;
+   padding-left:30px;
+   padding-top: 5px;
+    padding-bottom:10px ;
+}
+   
+h1{
+   
+    margin-left: 135px;
+    color: black;
+    font-size: 30px;
+}
+.btn{
+    margin-left: 80px;
+}

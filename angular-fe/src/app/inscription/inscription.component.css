@@ -1,0 +1,93 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+ 
+  font-family: sans-serif;
+  background-size: 1400px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ 
+} 
+.hamza{
+  font-family:'Courier New', Courier, monospace;
+  font-style: oblique;
+  color: white;
+}
+.container{
+  width: 440px;
+  position: absolute;
+  top: 50%;
+  left: 25%;
+  transform: translate(25%,-50%);
+  color:black;
+  margin: auto;
+  widows: 50%;
+ 
+  
+  
+  padding-right:25px;
+  padding-left:45px;
+  padding-top: 25px;
+   padding-bottom:30px ;
+   border-radius: 50px;
+   border-style: solid;
+   background-color: rgba(0, 0, 0, 0.4);
+   background-repeat: no-repeat;
+   background-size: 3000px;
+}
+.container h1 {
+  
+  
+font-size: 30px;
+text-align: center;
+font-family: baskerville;
+}
+.container input{
+  border-bottom: white;
+  outline: none;
+  background: white;
+  color: black;
+  font-size: 18px;
+  width: 120%;
+  float: left;
+  margin: 0 10px;
+  padding-left:35px;
+  border-radius: 50px;
+  border-style: solid;
+  border-color:black;
+  font-size: large;
+  font-family: 'Courier New', Courier, monospace;
+
+
+}
+.bout{
+  padding-left:60px;
+  font-family: 'Courier New', Courier, monospace;
+  
+}
+.btn{
+  border-radius: 10px;
+  border-style: solid;
+  border-color:black;
+
+}
+.ok{
+    color:black;
+    font-family: fantasy;
+
+}
+.kk{
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+.aa{
+  transform: translate(40%,-130%);
+}
+.rr{
+  transform: translate(120%,-1599%);
+  border-left: navy;
+  border-right: navy;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  
+}

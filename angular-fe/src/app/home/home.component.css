@@ -1,0 +1,191 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+
+.text-center {
+    text-align: center!important;
+}
+body {
+   
+    display: flex;
+    color: #fff;
+    text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, .5);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    
+  
+}
+html, body {
+    height: 100%;
+    background-color: #333;
+    
+}
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    height: 600px;
+    background-image: url("src/assets/images/pae.jpg");
+    background-repeat: no-repeat;
+    background-size: 1250px;
+   
+}
+
+.imgg{
+  transform: translate(-205%,85%);
+  border: 3px solid gold;
+
+
+ 
+
+}
+.xx{
+    transform: translate(350%,-520%);
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+.xy{
+    transform: translate(430%,-520%);
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+}
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    transform: translate(0%,-140%);
+    font-style: unset;
+    font-size:60px;
+    color: white;
+    
+}
+.lead{
+    transform: translate(0%,-270%);
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.ok{
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 25px;
+    
+    transform: translate(0%,-270%);
+    font-size: 16px;
+  
+    border:3px solid gold;
+   
+    border-left: navy;
+    border-right: navy;}
+    
+    .an{
+      font-family: 'Courier New', Courier, monospace;
+      margin-left: 175px;
+      color: black;
+    
+    }
+    .modi{
+      color: black;
+    }
+    
+    
+  
+  
+ 
+  
+    
+
+.ll{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.tytT{
+  font-family: cursive;
+  margin-left: 160px;
+  color: gold;
+}
+
+.tyt{
+    font-family: cursive;
+    margin-left: 100px;
+    color: gold;
+  }
+  .textbox input{
+    border: none;
+    border-bottom: 1px solid gold;
+    outline: none;
+   color: black;
+    
+    margin-right: 100px;
+    font-family: 'Courier New', Courier, monospace;
+  
+  }
+  .textbox i{
+    width: 35px;
+    float: left;
+    text-align: center;
+    color: gold;
+    transform: translate(320%,20%)
+   
+  }
+  
+  .textbix{
+    overflow: hidden;
+  }
+  .bt{
+    margin-left: 350px;
+  }
+  .container{
+    border: 2px solid white;
+  }
+  .hi{
+    
+    font-size: 25px;
+  
+  }
+  
+  
+ .moh{
+     background-image: url("src/assets/images/pae.jpg");
+     background-repeat: no-repeat;
+     margin-left: 22px;
+     margin-bottom: 40px;
+   }
+  
+  
+  
+  .kk{
+    margin-left: 170px;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    size: 45px;
+  }
+  .bb{
+      margin-top: 30px;
+    margin-left: 100px;
+    font-family:'Courier New', Courier, monospace;
+    color: black;
+    size: 15px;
+ 
+    background-repeat: no-repeat;
+    background-size: 320px;
+    border: 3px solid gold;
+    border-radius: 25px;
+    border-left: navy;
+    border-right: navy;
+   
+  }
+.uu{
+    color: black;
+    transform: translate(200%,130%);         
+}
+.cc{
+   
+    
+    transform: translate(205%,30%);   
+    border-radius: 5px;
+    border: 3px solid gold;
+    border-radius: 25px;
+    border-left: navy;
+    border-right: navy;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+    
+
+}

@@ -1,0 +1,151 @@
+<body>
+        <img src="assets/images/pae.jpg" width="1240px" height="600px">
+      
+        <div class="container ">
+      
+      
+          <h1 class="hamza">Créer Mon Compte<i class="fas fa-users"></i></h1>
+          <br>
+          <form [formGroup]="visitForm">
+      
+            <div class="form-row">
+              <div class="form-group ">
+      
+                <input type="text" class="form-control ok" id="nom"  placeholder="NOM" formControlName="nom">
+                <div *ngIf="nom.touched && nom.invalid">
+                  <small *ngIf="nom.errors.required" class="text-danger"><strong class="bold">champ
+                      obligatoire*</strong><br></small>
+                  <small *ngIf="nom.errors.minlength" class="text-danger"> <strong class="bold">Nom invalide
+                      !!!</strong><br></small>
+                </div>
+               
+              </div>
+              <div class="form-group ">
+      
+                <input type="text" class="form-control ok" id="prenom"  placeholder="PRENOM" formControlName="prenom">
+                <div *ngIf="prenom.touched && prenom.invalid">
+                  <small *ngIf="prenom.errors.required" class="text-danger"><strong class="bold">champ
+                      obligatoire*</strong><br></small>
+                  <small *ngIf="prenom.errors.minlength" class="text-danger"><strong class="bold">Prenom invalide !!</strong>
+                    !<br></small>
+                </div>
+                
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group ">
+      
+                <input type="email" class="form-control ok" id="email"  placeholder="EMAIL" formControlName="email">
+                <div *ngIf="email.touched && email.invalid">
+                  <small *ngIf="email.errors.required" class="text-danger"><strong class="bold">champ
+                      obligatoire*</strong><br></small>
+                  <small *ngIf="email.errors.email" class="text-danger"> <strong class="bold">Email invalide
+                      !!!</strong><br></small>
+                </div>
+               
+              </div>
+              <div class="form-group ">
+      
+                <input type="text" class="form-control ok" id="tel" placeholder="TEL" formControlName="tel">
+                <div *ngIf="tel.touched && tel.invalid">
+                  <small *ngIf="tel.errors.required" class="text-danger"><strong class="bold">champ
+                      obligatoire*</strong><br></small>
+                  <small *ngIf="tel.errors.minlength" class="text-danger"> <strong class="bold">champ doit avoir au minimum 8
+                      caractéres</strong><br></small>
+                  <small *ngIf="tel.errors.maxlength" class="text-danger"> <strong class="bold">champ doit avoir au minimum 8
+                      caractéres</strong><br></small>
+                  <small *ngIf="tel.errors.pattern" class="text-danger"> <strong class="bold">TEL doit être composé de 8
+                      chiffres !!!</strong><br></small>
+                </div>
+    
+    
+    
+    
+                
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group ">
+                <input type="text" list="gouvernorat" placeholder="Choisir votre gouvernorat" name="mon_gouvernorat"
+                  class="form-control ok" />
+                <datalist id="gouvernorat">
+                  <option value="1">ARIANA</option>
+                  <option value="2">BEJA</option>
+                  <option value="3">BEN AROUS</option>
+                  <option value="4">BIZERTE</option>
+                  <option value="5">GABES</option>
+                  <option value="6">GAFSA</option>
+                  <option value="7">JENDOUBA</option>
+                  <option value="8">KAIROUAN</option>
+                  <option value="9">KASSERINE</option>
+                  <option value="10">KEBILI</option>
+                  <option value="11">KEF</option>
+                  <option value="12">MAHDIA</option>
+                  <option value="13">MANOUBA</option>
+                  <option value="14">MEDENINE</option>
+                  <option value="15">MONASTIR</option>
+                  <option value="16">NABEUL</option>
+                  <option value="17">SFAX</option>
+                  <option value="18">SIDI BOUZID</option>
+                  <option value="19">SILIANA</option>
+                  <option value="20">SOUSSE</option>
+                  <option value="21">TATAOUINE</option>
+                  <option value="22">TOZEUR</option>
+                  <option value="23">TUNIS</option>
+                  <option value="24">ZAGHOUAN</option>
+                </datalist>
+              </div>
+            </div>
+      
+      
+            <div class="form-row">
+              <div class="form-group ">
+      
+                <input type="password" class="form-control ok" id="Pass"  placeholder="MOT DE PASSE" formControlName="pass">
+                <div *ngIf="pass.touched && pass.invalid">
+                  <small *ngIf="pass.errors.required" class="text-danger"><strong class="bold">champ
+                      obligatoire*</strong><br></small>
+                  <small *ngIf="pass.errors.pattern" class="text-danger">champ ne doit pas contenir * / - +<br></small>
+                  <small *ngIf="pass.errors.minlength" class="text-danger"> champ doit contenir au min 8
+                    caractéres<br></small>
+                  <small *ngIf="pass.errors.maxlength" class="text-danger"> champ doit contenir au max 15
+                    caractéres<br></small>
+                </div>
+               
+              </div>
+              <div class="form-group ">
+      
+                <input type="password" class="form-control ok" id="confirmpass" 
+                  placeholder="CONFIRMER MOT DE PASSE"  formControlName="confirmpass">
+                  <div *ngIf="confirmpass.touched && confirmpass.invalid">
+                <small *ngIf="confirmpass.errors.required" class="text-danger"><strong class="bold">champ
+                    obligatoire*</strong><br></small>
+                <small *ngIf="confirmpass.errors.minlength" class="text-danger"> <strong class="bold">Mot de passe invalide
+                    !!!</strong><br></small>
+              </div>
+       
+                
+                
+      
+              </div>
+      
+      
+      
+            </div>
+      
+      
+    <div class="bout">
+              <button class="btn btn-outline-light">Confirmer</button>
+              <button type="submit" class="btn btn-outline-light mx-2 " [routerLink]="['/']">Annuler</button>
+            </div>
+      
+      
+          </form>
+      
+      
+        </div>
+      
+      
+      
+      </body>
+    

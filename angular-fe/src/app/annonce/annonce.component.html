@@ -1,0 +1,131 @@
+<body>
+        <img src="assets/images/pae.jpg" width="1250px" height="900PX">
+       <div class="container">
+     
+        <form [formGroup]="AnForm" (ngSubmit)="ass()" class="forme">
+    
+    
+        <h1>Créer votre annonce </h1><br>
+        
+        <input type="text"  list="gouvernorat" placeholder="Choisir votre gouvernorat" name="mon_gouvernorat" class="inb col lg-6 col-5" formControlName="gouv"/>
+        <div *ngIf="gouv.touched ">
+            <small *ngIf="gouv.errors.required" class="text-danger"><strong class="bold">champ
+                obligatoire*</strong><br></small>
+                </div>
+        <datalist id="gouvernorat">
+            <option value="1">ARIANA</option>
+            <option value="2">BEJA</option>
+            <option value="3">BEN AROUS</option>
+            <option value="4">BIZERTE</option>
+            <option value="5">GABES</option>
+            <option value="6">GAFSA</option>
+            <option value="7">JENDOUBA</option>
+            <option value="8">KAIROUAN</option>
+            <option value="9">KASSERINE</option>
+            <option value="10">KEBILI</option>
+            <option value="11">KEF</option>
+            <option value="12">MAHDIA</option>
+            <option value="13">MANOUBA</option>
+            <option value="14">MEDENINE</option>
+            <option value="15">MONASTIR</option>
+            <option value="16">NABEUL</option>
+            <option value="17">SFAX</option>
+            <option value="18">SIDI BOUZID</option>
+            <option value="19">SILIANA</option>
+            <option value="20">SOUSSE</option>
+            <option value="21">TATAOUINE</option>
+            <option value="22">TOZEUR</option>
+            <option value="23">TUNIS</option>
+            <option value="24">ZAGHOUAN</option>
+        </datalist> 
+    
+    
+       <br>
+        <input type="init"  placeholder="Code postal"  class="inb col lg-6 col-5" formControlName="code"/>
+        <div *ngIf="code.touched && code.invalid">
+            <small *ngIf="code.errors.required" class="text-danger"><strong class="bold">champ
+                obligatoire*</strong><br></small>
+            <small *ngIf="code.errors.maxlength" class="text-danger"> <strong class="bold">Code postal invalide
+                !!!</strong><br></small>
+          </div>
+        <p>Indiquer le code postal de l'endroit où se trouve le bien que vous proposez ou recherchez</p>
+    
+    
+    
+        
+         
+    
+    
+    
+    
+        <label>Type d'annonce:</label>
+    
+        <input type="radio" name="typ"  class="mx-2" /> <label for="typ">offres</label>
+        
+            <input type="radio" name="typ"  class="mx-2"/> <label for="typ">demandes</label> <br>
+        
+    
+        <input type="tel" name="tel" placeholder="Tel" class="inb col lg-6 col-5" formControlName="tel"/>
+        <div *ngIf="tel.touched && tel.invalid">
+            <small *ngIf="tel.errors.required" class="text-danger"><strong class="bold">champ
+                obligatoire*</strong><br></small>
+            <small *ngIf="tel.errors.minlength" class="text-danger"> <strong class="bold">champ doit avoir au minimum 8
+                caractéres</strong><br></small>
+            <small *ngIf="tel.errors.maxlength" class="text-danger"> <strong class="bold">champ doit avoir au minimum 8
+                caractéres</strong><br></small>
+            <small *ngIf="tel.errors.pattern" class="text-danger"> <strong class="bold">TEL doit être composé de 8
+                chiffres !!!</strong><br></small>
+          </div>
+      
+        <input type="checkbox" name="masquer" value="masquer votre numéro de téléphone dans l'annonce " class="wwx" />
+       
+        <label class="mx-2">masquer votre numéro dans l'annonce </label>
+    
+    
+    
+    
+    
+        <br>
+        <input type="text" placeholder="Titre de l'annonce" class="inb col lg-6 col-5" formControlName="titre"/>
+        <div *ngIf="titre.touched && titre.invalid">
+            <small *ngIf="titre.errors.required" class="text-danger"><strong class="bold">champ
+                obligatoire*</strong><br></small>
+            <small *ngIf="titre.errors.maxlength" class="text-danger"><strong class="bold">Titre invalide !!</strong>
+              !<br></small>
+          </div>
+        
+        
+        
+        <br>
+        <p>Votre annonce sera refusée si le titre ne decrit pas précisément le produit que vous proposez <br>
+            Ne pas mentionner <strong> vente</strong>  ou <strong>Achat</strong> dans le titre </p>
+    
+    
+        
+        
+    
+            <textarea name="des" id="des" cols="55" rows="4" formControlName="descri" placeholder="Texte de l'annonce..." class="inb"></textarea>
+                <div *ngIf="descri.touched && descri.invalid">
+                        <small *ngIf="descri.errors.required" class="text-danger"><strong class="font">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></small>
+                        <small *ngIf="descri.errors.maxlength" class="text-danger"><strong class="font">texte invalid<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></small>
+                        </div>
+           
+    
+        
+        <p>Indiquer dans l'annonce si vous désirez être contacté(e) uniquement par téléphone. </p>
+        
+        <input type="checkbox" name="masque" value="masquer votre nom  dans l'annonce " class="wwx" />
+        <label class="mx-2">masquer votre nom dans l'annonce pour être anonyme </label><br><br>
+    
+    
+       
+       
+        <button type="submit" class="btn btn-outline-light so col-8" [disabled]="AnForm.invalid"  [routerLink]="['/profil']"><strong>envoyer</strong> </button> <br>
+    
+                <button type="button" class="btn btn-outline-light btn-block col-8"  [routerLink]="['/profil']">annuler</button> 
+             
+        
+    
+    </form>
+    </div> 
+    </body>

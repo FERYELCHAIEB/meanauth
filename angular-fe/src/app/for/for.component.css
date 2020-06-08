@@ -1,0 +1,79 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+
+
+  font-family: sans-serif;
+  background-size: 1400px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ 
+}
+.container{
+  width: 360px;
+  position: absolute;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%,-50%);
+  color: white;
+  margin:auto;
+  widows: 50%;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-right:30px;
+  padding-left:30px;
+  padding-top: 30px;
+   padding-bottom:50px ;
+   border: 2px solid black;
+   border-radius:20px;
+}
+
+.container h1 {
+  float: left;
+  font-size: 150px;
+margin-left:70px;
+  padding: 13px 0;
+}
+.textbox{
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 7px 0;
+  border-bottom: solid ;
+}
+.textbox i{
+  width: 25px;
+  float: left;
+  text-align: center;
+}
+.textbox input{
+  border: none;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 15px;
+  width: 80%;
+  float: left;
+  margin: 0 10px;
+  font-family: 'Courier New', Courier, monospace;
+}
+.btn-outline-light{
+  border-radius:10px;
+         font-family:arial;
+        
+         transform:translate(0%,15%); 
+         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+         border-left: navy;
+         border-right: navy;
+}
+
+.p{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 25px;
+}
+.btn-link{
+float:left;
+text-align: center;
+margin-left:70px;
+font-size:16px;
+font-family: 'Courier New', Courier, monospace;
+}

@@ -1,0 +1,54 @@
+
+<body>
+        <img src="assets/images/pae.jpg" width="1240px" height="600px">
+        <form [formGroup]="contactForm">
+    <div class="container">
+        
+            <h1>Contactez-nous</h1>
+            <div class="form-group ">
+                <div class="row ">
+                   
+                    <input type="text" name="nom de l'utilisateur" id="nom de l'utilisateur" formControlName="usern" placeholder="NomComplet" class="col-4 za">
+                    <div *ngIf="username.touched && username.invalid">
+                    <small *ngIf="username.errors.required" class="text-danger"><strong class="font">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></small>
+                    <small *ngIf="username.errors.pattern" class="text-danger"><strong class="font">champ invalide<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></small>
+                       </div>
+    
+                </div>
+            </div>
+            <div class="form-group ">
+                <div class="row ">
+                    
+                
+                    <input type="email" name="nom de l'utilisateur" id="nom de l'utilisateur" formControlName="mail" placeholder="Email" class="col-4 zb">
+                    <div *ngIf="email.touched && email.invalid">
+                            <small *ngIf="email.errors.required" class="text-danger"><strong class="font">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></small>
+                            <small *ngIf="email.errors.email" class="text-danger"><strong class="font">champ invalide<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></small>
+                               </div>
+                </div>
+            </div>
+    
+    
+    
+            <div class="position">
+               
+                <textarea name="message" id="msg" cols="30" rows="6" formControlName="msg" placeholder="Placez votre message..." class="zz"></textarea>
+                <div *ngIf="message.touched && message.invalid">
+                        <small *ngIf="message.errors.required" class="text-danger"><strong class="font">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong></small>
+                        </div>
+            </div>
+            <div class="form-group form-check ok">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                
+                <label class="form-check-label mx-2" for="exampleCheck1">J'accepte l'envoi de mon message...</label>
+            </div>
+            <div class="bout">
+                <button class="btn btn-outline-light  btn-block col-6" [routerLink]="['/profil']">Envoyer</button>
+     
+                <button class="btn btn-outline-light  btn-block col-6" [routerLink]="['/profil']">Annuler</button>
+            </div>
+      
+    
+    </div>
+    </form>
+    </body>

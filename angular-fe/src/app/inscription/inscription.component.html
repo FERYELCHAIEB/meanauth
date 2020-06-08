@@ -1,0 +1,93 @@
+<body>
+  <body>
+    <img src="assets/images/pae.jpg" width="1240px" height="1000px">
+    <div class="container " >
+        <h1 class="hamza">Créer Mon Compte <i class="fas fa-users"></i></h1>
+        <br> 
+            <form [formGroup]="insForm" (ngSubmit)="Inscrire()" >
+                
+                    <div class="form-row">
+                      <div class="form-group ">
+                        
+                        <input type="text" class="form-control ok" id="nom" formControlName="nom" placeholder="NOM">
+                        <div *ngIf="nom.touched && nom.invalid">
+                          <small  *ngIf="nom.errors.required" class="text-danger"><strong class="bold">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                          <small *ngIf="nom.errors.minlength" class="text-danger"> <strong class="bold">Nom invalide <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                         </div>
+                      </div>
+                      <div class="form-group ">
+                        
+                        <input type="text" class="form-control ok" id="prenom" formControlName="prenom" placeholder="PRENOM">
+                        <div *ngIf="prenom.touched && prenom.invalid">
+                          <small  *ngIf="prenom.errors.required" class="text-danger"><strong class="bold">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                          <small *ngIf="prenom.errors.minlength" class="text-danger"><strong class="bold">Prenom invalide <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                         </div>
+                      </div>
+                    </div>
+                    <div class="form-row">
+                    <div class="form-group ">
+                      
+                      <input type="email" class="form-control ok" id="email"  formControlName="mail" placeholder="EMAIL">
+                      <div *ngIf="email.touched && email.invalid">
+                        <small  *ngIf="email.errors.required" class="text-danger"><strong class="bold">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                        <small *ngIf="email.errors.email" class="text-danger"> <strong class="bold">Email invalide <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                       </div>
+                    </div>
+                    <div class="form-group ">
+                    
+                      <input type="text" class="form-control ok" id="tel" formControlName="tel" placeholder="TEL">
+                      <div *ngIf="tel.touched && tel.invalid">
+                        <small  *ngIf="tel.errors.required" class="text-danger"><strong class="bold">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                        <small *ngIf="tel.errors.minlength" class="text-danger"> <strong class="bold">champ doit avoir au minimum 8 caractéres<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                        <small *ngIf="tel.errors.maxlength" class="text-danger"> <strong class="bold">champ doit avoir au minimum 8 caractéres<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                        <small *ngIf="tel.errors.pattern" class="text-danger"> <strong class="bold">TEL doit être composé de 8 chiffres <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                       </div>
+                    </div>
+                    <div class="form-group ">
+                        
+                        <input type="text" class="form-control ok" id="gouve" formControlName="gouve" placeholder="Gouvernorat">
+                        <div *ngIf="gouve.touched && gouve.invalid">
+                          <small  *ngIf="gouve.errors.required" class="text-danger"><strong class="bold">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                          <small *ngIf="gouve.errors.pattern" class="text-danger">ce champ doit être en lettres <i class="fa fa-exclamation-triangle" aria-hidden="true"></i><br></small>
+                         </div>
+                      </div>
+                  </div> 
+                  
+    
+                    <div class="form-row">
+                            <div class="form-group ">
+                                    
+                                    <input type="password" class="form-control ok" id="Pass" formControlName="pass" placeholder="MOT DE PASSE">
+                                    <div *ngIf="pass.touched && pass.invalid">
+                                      <small  *ngIf="pass.errors.required" class="text-danger"><strong class="bold">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                                      <small *ngIf="pass.errors.pattern" class="text-danger">champ ne doit pas contenir * / - + <i class="fa fa-exclamation-triangle" aria-hidden="true"></i><br></small>
+                                      <small *ngIf="pass.errors.minlength" class="text-danger"> champ doit contenir au min 8 caractéres<i class="fa fa-exclamation-triangle" aria-hidden="true"></i><br></small>
+                                      <small *ngIf="pass.errors.maxlength" class="text-danger"> champ doit contenir au max 15 caractéres<i class="fa fa-exclamation-triangle" aria-hidden="true"></i><br></small>
+                                     </div>
+                                  </div>
+                                  <div class="form-group ">
+                                        
+                                        <input type="password" class="form-control ok" id="confirmpass" formControlName="confirmpass" placeholder="CONFIRMER MOT DE PASSE" >
+                                        
+                                        <div *ngIf="confirmpass.touched && confirmpass.invalid">
+                                          <small  *ngIf="confirmpass.errors.required" class="text-danger"><strong class="bold">champ obligatoire<i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                                          <small *ngIf="confirmpass.errors.minlength" class="text-danger"> <strong class="bold">Mot de passe invalide <i class="fa fa-exclamation-triangle" aria-hidden="true"></i></strong><br></small>
+                                         </div>
+                                         <div *ngIf="confirmpass.valid && confirmpass.value != pass.value" class="text-danger">
+                                         <span class="bold">les 2 mots de passe sont différents</span> 
+                                      </div>
+                                         
+                                      </div>
+                                </div>
+                            
+                                <div class="bout">
+                                  <button type="submit" class="btn btn-outline-light" [disabled]="insForm.invalid ||confirmpass.value != pass.value">Confirmer</button>
+                                  <button type="submit" class="btn btn-outline-light mx-2 my-2 my-sm-0" [routerLink]="['/']">Annuler</button>
+                              </div>
+                </form>
+    
+                </div>
+              </body>
+    
+    
+    
